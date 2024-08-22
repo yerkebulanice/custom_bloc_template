@@ -7,7 +7,7 @@ void main(List<String> arguments) {
 
   var argResults = parser.parse(arguments);
 
-  if (argResults.command?.name == 'create-feature') {
+  if (argResults.command?.name == 'create') {
     createFeatureTemplate(argResults.command?.rest[0] ?? 'new_feature');
   } else {
     print('Unknown command. Use "create-feature" to generate a new feature template.');
